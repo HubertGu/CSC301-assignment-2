@@ -11,7 +11,7 @@ import NodeSideDrawer from "../NodeSideDrawer";
 import { Paper, AppBar, Toolbar, Slider, Box} from "@mui/material"
 cytoscape.use(dagre);
 
-export const CytoscapeGraph = (props: any):ReactElement => {
+const CytoscapeGraph = () => {
   const cyRef = useRef<cytoscape.Core | null>(null);
 
   // Search highlight function
@@ -96,3 +96,5 @@ export const CytoscapeGraph = (props: any):ReactElement => {
   </Box>
   );
 };
+
+export default CytoscapeGraph;
